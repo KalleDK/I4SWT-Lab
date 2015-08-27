@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Calculator.Test.Unit
+﻿namespace Calculator.Test.Unit
 {
     using NUnit.Framework;
 
@@ -45,5 +43,10 @@ namespace Calculator.Test.Unit
             Assert.That(double.PositiveInfinity, Is.EqualTo(_calculator.Add(double.MaxValue, double.MaxValue)));
         }
 
+        [Test]
+        public void Add_Zeros()
+        {
+            Assert.That(0, Is.EqualTo(_calculator.Add(0, 0)));
+        }
     }
 }
