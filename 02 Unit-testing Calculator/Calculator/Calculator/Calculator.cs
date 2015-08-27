@@ -8,5 +8,24 @@ namespace Calculator
 {
     public class Calculator
     {
+        public double Add(double a, double b)
+        {
+            return a + b;
+        }
+
+        public double Sub(double a, double b)
+        {
+            return a - b;
+        }
+
+        public double Multiply(double a, double b)
+        {
+            return a * b;
+        }
+
+        public double Power(double a, double exp)
+        {
+            return Math.Pow(a, exp);
+        }
     }
 }

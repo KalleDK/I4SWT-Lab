@@ -1,0 +1,8 @@
+language: csharp
+solution: "./02 Unit-testing Calculator/Calculator/Calculator.sln"
+install:
+  - nuget restore "./02 Unit-testing Calculator/Calculator/Calculator.sln"
+  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
+script:
+  - xbuild /p:Configuration=Release "./02 Unit-testing Calculator/Calculator/Calculator.sln"
+  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe "./02 Unit-testing Calculator/Calculator/Calculator.Test.Unit/bin/Release/Calculator.Test.Unit.dll"
