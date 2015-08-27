@@ -1,4 +1,9 @@
-﻿namespace Calculator.Test.Unit
+﻿using System;
+using System.Text;
+using NUnit.Framework;
+using Calculator;
+
+namespace Calculator.Test.Unit
 {
     using NUnit.Framework;
 
