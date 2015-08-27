@@ -44,5 +44,6 @@ namespace Calculator.Test.Unit
         {
             Assert.That(double.PositiveInfinity, Is.EqualTo(_calculator.Add(double.MaxValue, double.MaxValue)));
         }
+
     }
 }
