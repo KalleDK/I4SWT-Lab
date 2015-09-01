@@ -1,7 +1,8 @@
 language: csharp
+sudo: required
 solution: "./02 Unit-testing Calculator/Calculator/Calculator.sln"
 before_install:
-  - apt-get install nunit-console
+  - sudo apt-get install nunit-console
 before_script:
   - nuget restore "./02 Unit-testing Calculator/Calculator/Calculator.sln"
 after_script:
