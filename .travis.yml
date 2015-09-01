@@ -4,6 +4,7 @@ solution: "./02 Unit-testing Calculator/Calculator/Calculator.sln"
 before_install:
   - sudo apt-get install nunit-console
 before_script:
-  - nuget restore "./02 Unit-testing Calculator/Calculator/Calculator.sln"
+  - ls -la ./02\ Unit-testing\ Calculator/Calculator/Calculator.sln
+  - nuget restore ./02\ Unit-testing\ Calculator/Calculator/Calculator.sln
 after_script:
-  - nunit-console "./02 Unit-testing Calculator/Calculator/Calculator.Test.Unit/bin/Release/Calculator.Test.Unit.dll"
+  - nunit-console ./02\ Unit-testing\ Calculator/Calculator/Calculator.Test.Unit/bin/Release/Calculator.Test.Unit.dll
