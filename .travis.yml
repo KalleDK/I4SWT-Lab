@@ -1,6 +1,6 @@
 language: csharp
 sudo: required
-solution: "./02 Unit-testing Calculator/Calculator/Calculator.sln"
+solution: ./02\ Unit-testing\ Calculator/Calculator/Calculator.sln
 before_install:
   - sudo apt-get install nunit-console
 before_script:
