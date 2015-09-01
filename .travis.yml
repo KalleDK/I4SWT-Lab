@@ -2,7 +2,7 @@ language: csharp
 addons:
   apt:
     packages:
-      - nuint-console
+      - nunit-console
 solution: ./02\ Unit-testing\ Calculator/Calculator/Calculator.sln
 before_script:
   - ls -la ./02\ Unit-testing\ Calculator/Calculator/Calculator.sln
